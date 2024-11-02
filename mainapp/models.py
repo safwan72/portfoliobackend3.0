@@ -23,6 +23,7 @@ class ProjectAdmin(models.Model):
     url = models.URLField(max_length=200,blank=True)
     github_url = models.URLField(max_length=200, blank=True)
     is_live=models.BooleanField(default=True)
+    test_details = models.TextField(blank=True)
     added_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
